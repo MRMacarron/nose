@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+body{
+    background-color: blue;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    float: left;
+}
+
+.sections{
+    padding: 10px 100px 10px 100px;
+    border-color: black;
+}
+button{
+    border-radius: 10px;
+}
+/*cards*/
+.cardfila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 30px 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+   
+}
+.card{
+    width: 250px;
+    margin: 20px;
+    background-color: rgba(160, 76, 225, 0.589);
+    border-radius: 50px;
+    border: 2px;
+    border-color: black;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+    overflow: visible;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.cardv{
+    width: 300px;
+    margin: 20px;
+    background-color: rgba(160, 76, 225, 0.589);
+    border-radius: 50px;
+    border: 2px;
+    border-color: black;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+    overflow: visible;
+}
+.cardv .contenido-cardv{
+	padding: 15px;
+	text-align: center;
+}
+.cardv:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+iframe{
+    border-radius: 15px 15px 0 0;
+    align-content: center;
+    width: 100%;
+}
+.card img{
+    border-radius: 15px 15px 0 0;
+    align-content: center;
+    width: 100%;
+}
+
+.card video{
+    border-radius: 15px 15px 0 0;
+    width: 300px;
+}
+/*redes*/
+i{
+    font-size: 24px;
+}
+i:hover{
+    color: rgb(255, 0, 0);
+}
+a:any-link{
+    color: white;
+}
+a:-webkit-any-link{
+    color: white
+}
+a:-moz-any-link{
+    color: white;
+}
+.masinfo button{
+    background-color: #07ff90;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    padding: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.card img, .card video{
+    border-radius: 15px 15px 0 0;
+}
+
+/*botones*/
+.masinfo button{
+    background: #06b98c;
+    color: #ffffff;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.masinfo button::after, .masinfo button::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #02b695;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    
+}
+
+.masinfo button:hover{
+    transform: translate(-12px, -12px);
+}
+
+.masinfo button:hover::after{
+    transform: translate(6px, 6px);
+}
+
+.masinfo button:hover::before{
+    transform: translate(12px, 12px);
+}
+/*fotos perritos*/
+#perritos{
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+#perritos img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+#perritos img:hover{
+    width: 250px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+#caninos{
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+}
+.diseño{
+    border-radius: 4px;
+    border-color: black;
+}
